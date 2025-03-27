@@ -1,0 +1,12 @@
+[project]
+name = "dify-plugin-glm-search"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dify-plugin~=0.0.1b72",
+]
+
+[tool.ruff]
+line-length = 176

@@ -1,0 +1,42 @@
+identity:
+  author: king
+  name: glm-search
+  label:
+    en_US: glm-search
+    zh_Hans: glm-search
+    pt_BR: glm-search
+  description:
+    en_US: use search tools provided by glm
+    zh_Hans: use search tools provided by glm
+    pt_BR: use search tools provided by glm
+  icon: icon.svg
+tools:
+  - tools/glm-search.yaml
+extra:
+  python:
+    source: provider/glm-search.py
+credentials_for_provider:
+  glm_api_key:
+    help:
+      en_US: Please input your GLM API key
+      zh_Hans: 请输入你的 GLM API key
+    label:
+      en_US: GLM API key
+      zh_Hans: GLM API key
+    placeholder:
+      en_US: Please input your GLM API key
+      zh_Hans: 请输入你的 GLM API key
+    required: true
+    type: secret-input
+  glm_base_url:
+    help:
+      en_US: Please input your GLM base URL
+      zh_Hans: 请输入你的 GLM base URL
+    label:
+      en_US: GLM base URL
+      zh_Hans: GLM base URL
+    placeholder:
+      en_US: Please input your GLM base URL (with /v1 or /v4 suffix)
+      zh_Hans: 请输入你的 GLM base URL (带 /v1 or /v4 结尾)
+    required: false
+    type: text-input

@@ -1,0 +1,38 @@
+version: 0.0.1
+type: plugin
+author: king
+name: glm-search
+label:
+  en_US: glm-search
+  ja_JP: glm-search
+  zh_Hans: glm-search
+  pt_BR: glm-search
+description:
+  en_US: use search tools provided by glm
+  ja_JP: use search tools provided by glm
+  zh_Hans: use search tools provided by glm
+  pt_BR: use search tools provided by glm
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/glm-search.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-27T17:09:25.524914+08:00
+privacy: PRIVACY.md
+verified: false

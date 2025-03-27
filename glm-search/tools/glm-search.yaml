@@ -1,0 +1,30 @@
+identity:
+  name: glm-search
+  author: king
+  label:
+    en_US: glm-search
+    zh_Hans: glm-search
+    pt_BR: glm-search
+description:
+  human:
+    en_US: use search tools provided by glm
+    zh_Hans: use search tools provided by glm
+    pt_BR: use search tools provided by glm
+  llm: use search tools provided by glm
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: use search tools provided by glm
+      zh_Hans: use search tools provided by glm
+      pt_BR: use search tools provided by glm
+    llm_description: use search tools provided by glm
+    form: llm
+extra:
+  python:
+    source: tools/glm-search.py
